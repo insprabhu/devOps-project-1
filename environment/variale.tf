@@ -8,3 +8,7 @@ variable "stg-map" {
     
     }
   
+  variable "vm-map" {
+    type = map(any)
+    
+  }

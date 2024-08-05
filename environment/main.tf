@@ -8,3 +8,9 @@ module "stgm" {
     source = "../storage accouunt"
     stg-map = var.stg-map
 }
+
+module "vm module" {
+depends_on = [module.rgm]
+source = "../virtual machine"
+vm-map = var.vm-map
+}
