@@ -48,7 +48,7 @@ resource "azurerm_network_security_group" "vm" {
 }
 }
 
-# creation of public ip #
+## creation of public ip ##
 
 resource "azurerm_public_ip" "vm" {
   name                = each.value.ip_name
